@@ -1,0 +1,498 @@
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@font-face {   
+  font-family: 'Aileron';    //This is what we are going to call
+  src: url('/assets/fonts/Aileron-Light.otf');
+}
+
+@font-face {   
+    font-family: 'AileronRegular';    //This is what we are going to call
+    src: url('/assets/fonts/Aileron-Regular.otf');
+}
+
+@font-face {   
+    font-family: 'AileronSemiBold';    //This is what we are going to call
+    src: url('/assets/fonts/Aileron-SemiBold.otf');
+}
+
+
+.Aileron{
+    font-family:Aileron !important;
+ }
+
+.AileronRegular{
+    font-family:AileronRegular !important; 
+}
+
+.AileronSemiBold{
+    font-family:AileronSemiBold !important; 
+}
+
+.render{
+  float: left;
+}
+
+.profile{
+    background: #F4870F;
+    padding: 6%;
+    display: none;
+}
+
+.cl-primary{
+  color:#043C66;
+}
+
+.cl-second{
+ color:#707070;
+}
+
+.cl-third{
+    color:#F4870F;
+}
+
+.cl-sc{
+  color: #2bba62;
+}
+
+.search-tab{
+    position: relative;
+    left: 37px;
+}
+
+.bg-primary{
+    color:#043C66;
+}
+
+.error{
+  border:solid 1px #F4870F;
+}
+
+.input-search
+{
+ color:#9E9E9E;
+}
+
+.icn{
+  padding: 12px;
+ }
+
+.schicon{
+    background: #073c66;
+    width: 22%;
+    height: 42px;
+}
+
+.icon-sh{
+    background: #073c66;
+    width: 20%;
+    float: right;
+    position: relative;
+    top: -39px;
+    height: 39px;
+    padding: 8px;
+}
+
+.pointer{
+    cursor: pointer !important;
+}
+.nus{
+    position: relative;
+    right: 18px;
+}
+
+.menu{
+    background: #FFFFFF;
+    color: #073c66;
+    height: auto;
+}
+
+ul{
+ list-style: none;
+}
+
+.tm{
+    font-size: 20px !important;
+    position: relative;
+    top: -46px;
+    left: 59px;
+}
+
+.stepmn{
+    position: relative;
+    top: 54px;
+    width: 6px;
+    left: 13px;
+}
+
+.arowdow{
+    position: relative;
+    left: 40px;
+    top: -7px;
+}
+
+.circle{
+    background: #F4870F;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.circlewh{
+    background: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.square{
+    background: #FFFFFF;
+    height: 36px;
+    width: 40px;
+    padding: 5px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.input-data{
+    background: #ffffff;
+    border: aliceblue;
+    height: 36px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 4px;
+}
+
+.inputsd{
+    width: 100%;
+    background: #ffffff;
+    border: aliceblue;
+    height: 36px;
+    margin-top: 4px;
+}
+
+.inputID{
+    width: 60px;
+    background: #ffffff;
+    border: aliceblue;
+    height: 37px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.inputIDL{
+  width: 100%;
+  background: #ffffff;
+  border: aliceblue;
+  height: 37px;
+  text-align: center;
+  margin-top: 3px;
+}
+
+.inputsdL{
+  width: 100%;
+  background: #ffffff;
+  border: aliceblue;
+  height: 36px;
+  margin-top: 4px;
+}
+
+.cnaction{
+ width: 100px;
+}
+
+.search-skill{
+    height: auto;
+    background: #ffffff;
+    position: relative;
+    display: block;
+    right: 0;
+    z-index: 1001;
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+    border-radius: 9px;
+    padding: 24px;
+    top: -337px;
+    margin: auto;
+    width: 264px;
+    left: 248px;
+    display: none;
+}
+
+.close{
+    float: right;
+    font-size: 26px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+}
+
+div#div_file {
+    font-size: 20px;
+    display: none;
+  }
+  
+  input#upload {
+    position: absolute;
+    top: 0px;
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    left: 5px;
+  }
+  
+  input#upload  {
+    color: transparent;
+  }
+  
+  input#upload::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  .modalMsg .modal-wrapper {
+    top: 20%;
+    width: 87%;
+    height: 50%;
+    position: absolute;
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.modalMsgPR .modal-wrapper {
+  top: 20%;
+  width: 87%;
+  position: absolute;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.ta{
+    background: #ffff;
+    border: solid 1px #f48710;
+ }
+
+
+.inputjf{
+    width: 289px;
+    color: #073c66;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+
+  .inputjfdr {
+    color: #073c66;
+    background: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.iconjf{
+ font-size: 34px;
+}
+
+.themePopOver .popover-content {
+    height: 30%;
+    border-radius: 10px;
+  }
+
+
+.schk{
+    width: 289px;
+    color: #073c66;
+    background: #ffffff;
+    border-radius: 29px;
+    text-align: center;
+  }
+  
+  
+  .iconshk{
+    position: absolute;
+    left: 220px;
+    font-size: 34px;
+  }
+
+  .iconlist{
+    position: absolute;
+    left: 255px;
+    font-size: 30px;
+  }
+  .colums{
+      background: #f3f3f37d;
+      color: #707070;
+      padding: 6px;
+      width: 100%;
+      margin-top: 4px;
+  }
+  .columsbd{
+    background: #f3f3f37d;
+    color: #707070;
+    padding: 6px;
+    width: 100%;
+    margin-top: 4px;
+  }
+  
+  .cchild{
+    padding: 6px;
+    color: #707070;
+    border-right: double 2px #70707033;
+  }
+  
+  .cchildbd{
+   width: 200px;
+   background: #FFFFFF;
+  }
+  
+  .flat-table {
+    font-family: Aileron;
+    -webkit-font-smoothing: antialiased;
+    font-size: 115%;
+    width: 100%;
+    th {
+      border-right: double 2px #70707033;
+      font-weight: normal;
+      text-align: center;
+      color: #7070707a;
+      padding: 5px;
+    }
+
+    td {
+      background-color: rgb(238, 238, 238);
+      color: rgb(111, 111, 111);
+      padding: 0px 2px;
+    }
+ }
+
+ .titlemodal {
+  margin: 1.4em 0 0.7em;
+  font-size: 20px;
+  line-height: 24px;
+  color: #002453;
+  font-weight: 800;
+}
+
+.contentmodal {
+  font-size: 15px;
+  line-height: 16px;
+  color: #002453;
+}
+
+.footer-md:before {
+  background-image: unset!important;
+}
+
+.closeModal{
+  float: right;
+  border: solid 0px;
+  border-radius: 19px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  background: white;
+  color: #03243d;
+  padding: 6px;
+  font-size: 17px;
+}
+
+.size-iconmd{
+  font-size: 35px;
+}
+
+.btnmodal{
+  background: #F4870F;
+  width: 200px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.userMenu .popover-content {
+  width: 30%;
+  margin-left: -1%;
+}
+  
+  
+.right{
+  float: right;
+}
+
+.left{
+  float: left;
+}
+
+.pd{
+  padding: 3px;
+}
+
+.error-validation {
+  border-color: #dc3545;
+  padding-right: calc(1.5em + .75rem);
+  background-image: url('assets/icon/error.png');
+  background-repeat: no-repeat;
+  background-position: right calc(.375em + .1875rem) center;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.success-validation {
+  border-color: #28a745;
+  padding-right: calc(1.5em + .75rem);
+  background-image: url('assets/icon/oksc.png');
+  background-repeat: no-repeat;
+  background-position: right calc(.375em + .1875rem) center;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+}
+
+.auto-data{
+  width: 290px;
+  background: #ffffff;
+  box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+  border-radius: 6px;
+  margin-top: 3px;
+  float: left;
+  padding-left: 5px;
+}
+
+.list-options{
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
+  border-radius: 6px;
+  float: left;
+  padding-left: 5px;
+  position: absolute;
+  color: #073c66;
+  cursor: pointer;
+}
+
+.zicon{
+  zoom: 3;
+}
+
+body.into 
+{
+  --moz-transform: scale(.8); 
+  --webkit-transform: scale(.8);
+  --o-transform: scale(.8);
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -ms-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  opacity: 0.2;
+}

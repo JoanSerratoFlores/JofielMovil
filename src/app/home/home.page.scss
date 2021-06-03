@@ -1,0 +1,94 @@
+
+ion-header {
+  height: 40px;
+}
+
+.renderViews{
+  margin-top: 50px; 
+  text-align: center;
+}
+
+.modulos{
+  width: 289px;
+  height: 600px;
+  float: left;
+}
+
+.renderviews{
+  width: 963px;
+  height: 600px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 7px;
+}
+
+.clw{
+  background: white !important;
+}
+
+.schk{
+  width: 300px;
+  color: #073c66;
+  background: #ffffff;
+  border-radius: 29px;
+  float: right;
+  position: relative;
+  left: 300px;
+}
+
+.iconshk{
+  float: right;
+  position: absolute;
+  left: 265px;
+  font-size: 34px;
+}
+
+.colums{
+    background: #f3f3f37d;
+    color: #707070;
+    padding: 6px;
+    width: 100%;
+    margin-top: 4px;
+}
+.columsbd{
+  background: #f3f3f37d;
+  color: #707070;
+  padding: 6px;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.cchild{
+  padding: 6px;
+  color: #707070;
+  border-right: double 2px #70707033;
+}
+
+.cchildbd{
+ width: 200px;
+ background: #FFFFFF;
+}
+
+.flat-table {
+  display: block;
+  font-family: Aileron;
+  -webkit-font-smoothing: antialiased;
+  font-size: 115%;
+  overflow: auto;
+  width: auto;
+  padding: 8px;
+  
+  th {
+    border-right: double 2px #70707033;
+    font-weight: normal;
+    text-align: center;
+    color: #7070707a;
+    padding: 8px;
+  }
+  td {
+    background-color: rgb(238, 238, 238);
+    color: rgb(111, 111, 111);
+    padding: 20px 30px;
+  }
+}
+
