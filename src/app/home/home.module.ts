@@ -5,19 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { RouterModule, Routes } from '@angular/router';
 
-export const HomeRoutes: Routes = [
-  {
-    path: 'skill', component: HomePage
-  }
-]
- 
 
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild(HomeRoutes),
     FormsModule,
     IonicModule,
     HomePageRoutingModule
