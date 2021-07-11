@@ -1,0 +1,324 @@
+<ion-content>
+    <br>
+    <br>
+    <br>
+    <ion-row>
+        <ion-col class="ion-padding" id="columna01">
+            <ion-avatar id="avatarusuario">
+                <img class="ion-text-center" src="assets/iconos/usuario_admin.svg">
+            </ion-avatar>
+        </ion-col>
+        <ion-col id="columna02" class="ion-padding">
+            <h1>Nombre de Usuario</h1>
+            <strong>Norman Riascos</strong>
+            <h1>Profesion</h1>
+            <u>Magister en Ingenieria</u>
+        </ion-col>
+        <ion-col>
+            <h1>Descripcion</h1>
+            <div>
+                <p style="font-size: small;">Me encanta la tecnologia, siempre estoy buscando cosas nuevas</p>
+            </div>
+        </ion-col>
+    </ion-row>
+
+    <ion-segment [(ngModel)]="segment" scrollable>
+        <ion-segment-button value="first">
+            Perfil
+        </ion-segment-button>
+        <ion-segment-button value="second">
+            Credenciales Academicas
+        </ion-segment-button>
+    </ion-segment>
+
+
+    <div [ngSwitch]="segment">
+        <ion-card *ngSwitchCase="'first'" id="Perfil">
+            <ion-card-header>
+                <b style=" color: #F4870F; font-size: 30px;">Hola</b>
+                <h1 style="color: #043C66; font-size: 30px;">Norman Riascos</h1>
+                <p>Termina de completar tu perfil</p>
+                <h1 style="font-size: 23px;">Estado de tu perfil
+                    <ion-label id="Porcentaje">78%</ion-label>
+                    <ion-progress-bar color="bottonlight" id="progreso" value=" 0.78 " style="height: 20px; "></ion-progress-bar>
+                </h1>
+
+            </ion-card-header>
+            <ion-row>
+                <ion-col>
+                    <div>Informacion Personal</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Estudios Profesionales</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Articulos academicos y laborales</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="/" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Nombres de Libros</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Proyectos academicos y laborales</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Certificaciones CENA</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Capacitaciones</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Tecnologia Informatica</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Competencia por certificaciones</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Credenciales laborales</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Idiomas</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div>Otros logros academicos</div>
+                </ion-col>
+                <ion-col>
+                    <ion-router-link id="link" href="#" class="underline">Agregar
+                        <ion-icon name="brush"></ion-icon>
+                    </ion-router-link>
+                </ion-col>
+            </ion-row>
+        </ion-card>
+
+        <ion-card *ngSwitchCase=" 'second' ">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div style="font-weight: bold; color: #043C66;">Credenciales Academicos</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-router-link id="link" href="#" class="underline">Agregar
+                                <ion-icon name="brush"></ion-icon>
+                            </ion-router-link>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Credencial</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p>Profesional</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Estudio</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p>Ingenieria Industrial</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <p style="color: #043C66;">Institucion Universitaria</p>
+                            </div>
+                        </ion-col>
+                        <ion-col>
+                            <div>
+                                <p>Universidad del Valle Regional Call</p>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Fecha de Inicio</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p>21/02/20</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Fecha de Finalizacion</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p>21/02/29</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <ion-button id="verCertificado" color="customlight">Ver Certificado
+                            </ion-button>
+                        </div>
+                    </ion-col>
+                    <ion-col class="ion-no-padding">
+                        <div>
+                            <ion-router-link class="ion-padding-right" href="http://vitela.javerianacali.edu.co/bitstream/handle/11522/11222/Diplomas_académicos_digitales_Blockchain.pdf?sequence=1&isAllowed=y" class="underline">
+                                <ion-icon name="document-outline"></ion-icon> Certificado Magister Norman Riascos
+                            </ion-router-link>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card>
+        <ion-card *ngSwitchCase=" 'second' ">
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <div style="font-weight: bold; color: #043C66;">Nombres de Articulos Academicos y Cientificos</div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <ion-router-link id="link" href="#" class="underline">Editar
+                                <ion-icon name="brush"></ion-icon>
+                            </ion-router-link>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Nombre</p>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet. Est repellendus nesciunt in sunt adipisci eum sequi quasi!</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Area</p>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Descripcion</p>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet. Est repellendus nesciunt in sunt adipisci eum sequi quasi! Et aliquid dignissimos eum dolorem itaque eos quisquam accusantium aut dolor sunt. Sit commodi corrupti est quod numquam est dolorem amet.
+                                Qui similique velit ea perspiciatis maiores ut soluta deserunt.</p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Fecha de Publicacion</p>
+                        </div>
+                        <div>
+                            <p>21/12/20</p>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <p style="color: #043C66;">Url del Articulo</p>
+                        </div>
+                        <div>
+                            <ion-router-link href="https://www.ub.edu/doctorat_eapa/wp-content/uploads/2012/12/El-art%C3%ADculo-cient%C3%ADfico_aspectos-a-tener-en-cuenta.pdf">https://www.ub.edu/doctorat_eapa/wp-content/uploads/2012/12/El-art%C3%ADculo-cient%C3%ADfico_aspectos-a-tener-en-cuenta.pdf</ion-router-link>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card>
+
+    </div>
+
+</ion-content>

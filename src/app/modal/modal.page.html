@@ -1,0 +1,36 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <div class="greencolor closeModal">
+          <span>
+          <ion-icon (click)="utilService.closeModal()" style="margin-top:1px;" class="float-right size-ico" name="close" mode="ios"></ion-icon>
+          </span>
+          </div>
+      </ion-col>
+      
+      <ion-col size="12">
+        <ion-card class="card cardtk" mode="ios">
+          <ion-card-header>
+            <div class="ion-text-center">
+              <h5 class="cl-third" >{{ dataService?.title | uppercase}}</h5>
+            </div>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list mode="ios">
+              <ion-item>
+               Nombre: {{ dataService?.storage.name }}
+              </ion-item>
+              <ion-item *ngIf="dataService?.storage.description">
+               Descripción:  {{ dataService?.storage.description }}
+              </ion-item>
+              <ion-item>
+               Fecha: {{ dataService?.storage.created_at }} , Hora: {{ dataService?.storage.hour }}
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

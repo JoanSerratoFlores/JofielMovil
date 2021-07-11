@@ -1,0 +1,94 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-9 col-md-8 col-lg-6 col-xl-5 mx-auto">
+        <div class="card my-5 container">
+          <!-- <div class="card-header"> -->
+            <div style="background-color: #F4870F;" class=" mt-3">
+              <img class="container mt-2" src="../../assets/iconos/jofiel_blanco-06.png" alt="logo">
+              <h4 class="text-center mb-2" style="color: #fff; margin: auto;">Tu Red Social de Conocimiento</h4>
+            </div>
+          <!-- </div> -->
+          <div class="container">
+            <h4 class="card-title text-left">Iniciar sesión</h4>
+            <!--h1>Admin</h1-->
+            
+            <!-- <div class="row">
+              <button type="button" class="btn btn-danger col-sm-3 ">
+                <i class="fa fa-google fa-3x"></i>
+              </button>
+              <div class="col-sm-1"></div>
+              <button type="button" class="btn btn-primary col-sm " style="background-color: #3b5998">
+                <i class="fa fa-facebook fa-3x"></i>
+              </button>
+              <div class="col-sm-1"></div>
+              <button type="button" class="btn btn-info col-sm-3">
+                <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+              </button>
+            </div> -->
+            <hr style="border: 1px solid #94908d;">
+            <form [formGroup]="form">
+              <div class="form-label-group">
+                <input 
+                [ngClass]="{'error-validation': submitted && f.username.errors, 'success-validation':username.valid && (username.dirty || username.touched) }"
+                formControlName="username"
+                type="text" class="form-control form-rounded input-wrapper" placeholder="Nombre de usuario o email" required>
+              </div>
+
+              <div class="ion-padding-top form-label-group">
+                <input 
+                [ngClass]="{'error-validation': submitted && f.password.errors, 'success-validation':password.valid && (password.dirty || password.touched) }"
+                formControlName="password"
+                type="password" class="form-control form-rounded input-wrapper" placeholder="Contraseña" required>
+              </div>
+              <br>
+              <div class="row container">
+                <div class="custom-control custom-checkbox mb-3">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label style="font-size: .8rem;" class="custom-control-label" for="customCheck1">Recordarme</label>
+                </div>
+                <div class="mx-auto"></div>
+                <div class="col-sm-4 col-md-5">
+                  <a style="color: blue; font-size: 0.6rem;" href="#">¿Olvidaste tu contraseña?</a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 mx-auto">
+                <button (click)="login()" class="btn btn-lg btn-primary btn-block" style="background-color: #F4870F; font-size: 1.2rem;" type="submit">Iniciar</button>
+              </div>
+              <hr style="border: 1px solid #94908d;">
+              <div class="row w-100">
+                <div class="container">
+                  <p style="font-size: 0.7rem;">Digite el código de seguridad que enviamos por msn al número móvil registrado</p>
+                </div>                
+              </div>
+              
+              <div class="row container">
+                <div class="form-label-group">
+                  <input style="border:1px solid #000000;" type="text" id="inputPassword" class="form-control form-rounded input-wrapper" required>                  
+                </div>
+                <div class="col-sm col-md col-lg col-xl mx-auto">
+                  <button class="btn btn-lg btn-primary btn-block" style="background-color: #F4870F; font-size: 1.2rem;" type="submit">Validar</button>
+                </div>
+              </div>
+              <br>
+              
+                <!-- <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3"></div> -->
+                
+
+                <!-- <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                  <a style="color: blue; font-size: 0.6rem;" href="#"><strong>Registrarme</strong></a>
+                </div> -->
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

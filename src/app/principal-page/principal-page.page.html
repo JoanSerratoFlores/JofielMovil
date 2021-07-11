@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons class="buttonsStart" slot="start">
+      <ion-img [src]="logoBlanco"></ion-img>
+      <ion-searchbar placeholder="Buscar en Jofiel"></ion-searchbar>
+    </ion-buttons>
+     <ion-grid class="grid">
+        <ion-row>
+          <ion-col *ngFor="let item of headerButtons.headerButtons.data">
+            <img src="{{ item.img }}" (click)="notificaciones()"><br>
+            <ion-label> {{ item.label }} </ion-label>
+          </ion-col>
+          </ion-row>
+      </ion-grid>
+    <ion-buttons class="buttonsEnd" slot="end">
+      <ion-button class="buttonAsk">Preguntar algo</ion-button>
+      <ion-avatar (click)="userMenu($event)">
+        <img src="../../assets/iconos2/avatar.png" />
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content overflow-scroll="true">
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>

@@ -1,0 +1,28 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <div class="ion-text-center">
+            <h5 class="cl-third" style="height: 0px;">Asignación de roles : {{ dataService.message }} 
+            </h5>
+          </div>
+          <div class="greencolor closeModal">
+          <span>
+           <ion-icon (click)="closeModal()" style="margin-top:1px;" class="pointer float-right size-ico" name="close" mode="ios"></ion-icon>
+          </span>
+          </div>
+      </ion-col>
+      
+      <ion-col size="12">
+           <ion-list *ngFor="let item of dataService.storage">
+            <ion-item  >
+              <ion-checkbox checked="{{ item.check }}" 
+              (ionChange)="add(item)" class="check" color="primary" mode="ios">
+             </ion-checkbox>
+             {{ item.name }}
+            </ion-item>
+          </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

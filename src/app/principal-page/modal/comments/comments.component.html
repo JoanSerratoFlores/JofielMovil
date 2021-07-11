@@ -1,0 +1,78 @@
+<ion-grid fixed>
+  <ion-row class="content">
+    <ion-col class="buttons" size="6">
+      <ion-chip outline color="primary" class="chip" (click)="onSubmit()">
+        <ion-label>Añadir pregunta</ion-label>
+      </ion-chip>
+    </ion-col>
+    <ion-col class="buttons" size="6">
+      <ion-chip outline color="primary" class="chip">
+        <ion-label>Compartir contenido</ion-label>
+      </ion-chip>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="3">
+      
+        <ion-avatar class="avatar">
+          <img src="../../../assets/iconos2/avatar.png">
+        </ion-avatar>
+      
+    </ion-col>
+    <ion-col size="3" class="datas">
+      <span class="name">Juan Salazar</span><br>
+      <span>Mag. Ingenieria</span>
+    </ion-col>
+    <ion-col size="3" class="contentToggle">
+      <ion-toggle color="primary" class="toggle"></ion-toggle>
+      <ion-label class="label">&nbsp;Ocultar mi nombre</ion-label>
+    </ion-col>
+    <ion-col size="3" class="contentIcon">
+      <ion-item lines="none" (click)="visibility( $event )">
+        <ion-icon slot="start" name="people-outline" class="icon"></ion-icon>
+        <ion-label class="iconLabel">Visibilidad</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <!-- <form [formGroup]="registerForm" (ngSubmit)="onSubmit()"> -->
+      <ion-item class="notes" lines="none">
+        <ion-textarea rows="3" cols="20" placeholder="Haz una pregunta a la comunidad" class="area" (keyup)="onKey($event)"></ion-textarea>
+        <!-- <ion-input placeholder="Haz una pregunta a la comunidad" class="area" (keyup)="onKey($event)"></ion-input> -->
+      </ion-item>
+    <!-- </form> -->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12" class="chipContent">
+      <ion-chip outline color="primary" class="chipSector">
+        <ion-label class="labelChipSector">Sector o categoria</ion-label>
+      </ion-chip>
+      <ion-chip outline color="primary" class="chipTema" (click)="theme( $event )">
+        <ion-label class="labelChipTema">Tema</ion-label>
+      </ion-chip>
+    </ion-col>
+  </ion-row>
+  <hr class="new1">
+  <ion-row class="footerContainer">
+    <ion-col size="4" class="shareContainer">
+      <ion-item class="item" lines="none">
+        <ion-label>Compartir</ion-label>
+      </ion-item>
+    </ion-col>
+    
+    <ion-col size="4" class="shareContentContainer">
+      <ion-item lines="none" class="item">
+        <!-- &#124; -->  <span class="pipe">|</span>
+        <ion-label>Compartir contenido</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col size="4" class="chipContent">
+      <ion-chip outline color="primary" class="chipTema" (click)="dismiss()">
+        <ion-label class="labelChipTema">Cancelar</ion-label>
+      </ion-chip>
+    </ion-col>
+  </ion-row>
+</ion-grid>

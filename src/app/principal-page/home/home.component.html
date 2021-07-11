@@ -1,0 +1,207 @@
+<ion-grid class="screenDivider">
+  <ion-row>
+    <ion-col class="sectionLeft" size="4">
+     <div style="overflow-y: scroll; height:500px;">
+      
+       
+        <ion-item class="title">
+          <ion-label class="label">Monetiza tus artículos</ion-label>
+        </ion-item>
+        <ion-list>
+          <ion-item lines="none" *ngFor="let item of articlesMoney.banners.data">
+            <ion-label class="ion-text-wrap">{{ item.title }}</ion-label>
+          </ion-item>
+        </ion-list>
+  
+        <!-- <div class="hr"> </div> -->
+        <hr/>
+  
+        <ion-item class="title">
+          <ion-label class="label">Artículos</ion-label>
+        </ion-item>
+        <ion-list>
+          <ion-item lines="none" *ngFor="let item of articlesMoney.articles.data">
+            <ion-label class="ion-text-wrap">{{ item.title }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-col>
+    <ion-col class="sectionCenter" size="8">
+      <div class="container">
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="8">
+              <div style="height: 550px;overflow: scroll;">
+              <ion-item class="title" lines="none">
+                <ion-label class="ion-text-wrap" style="color:#F4870F">Aprende mas rápido y fácil escuchando audio-articulos y respondiendo cuestionarios interactivos</ion-label>
+              </ion-item>
+              <ion-item class="title" lines="none">
+                <ion-searchbar placeholder="Haz una pregunta a la comunidad" searchIcon="../../../assets/iconos2/escribir.svg" (ionFocus)="modal()"></ion-searchbar>
+              </ion-item>
+              <ion-item class="title" lines="none">
+                <ion-searchbar placeholder="Pide ayuda para interpretar mejor una imagen" searchIcon="../../../assets/iconos2/foto.svg"></ion-searchbar>
+              </ion-item>
+
+              <ion-item class="title" lines="none" *ngFor="let item of questions; index as i;">
+                <ion-grid fixed >
+                  <ion-row>
+                    <ion-col size="2">
+                      <ion-avatar >
+                        <img src="../../../assets/iconos2/avatar.png">
+                      </ion-avatar>
+                    </ion-col>
+                    <ion-col class="cardContent" size="7">
+                      <div class="texter">
+                        <span class="name">Norman Riascos</span> &nbsp;&nbsp;&nbsp; <span class="time">12 horas</span><br>
+                        <span class="grade">Mag. Ingenieria</span> <br><br>
+                        <span class="coment">Me encanta la tecnlogia, siempre estoy buscando cosas nuevas</span> <br>
+                      </div>
+                    </ion-col>
+                    <ion-col size="3" class="tabs">
+                      <ion-row>
+                        <ion-col size="12" class="tabsChips">
+                          <ion-chip outline="true" class="chip" style="--background: #F4870F;">
+                            <ion-label class="lateralButtons" >Seguir a Norman</ion-label>
+                          </ion-chip>
+                        </ion-col>
+                      </ion-row>
+                      <ion-row>
+                        <ion-col size="5" class="tabsChips">
+                            <ion-chip outline class="chip">
+                              <ion-label class="lateralButtons" >Internet</ion-label>
+                            </ion-chip>
+                        </ion-col>
+                        <ion-col size="5" class="tabsChips">
+                            <ion-chip outline class="chip">
+                              <ion-label class="lateralButtons" >Ventas</ion-label>
+                            </ion-chip>
+                        </ion-col>
+                        <ion-col size="2" >
+                          <ion-icon name="ellipsis-horizontal" class="tabsOption" (click)="showPopover($event)"></ion-icon>
+                      </ion-col>
+                      </ion-row>
+                    </ion-col> 
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size="12" class="comments">
+                      <ion-row>
+                        <ion-col size="12" class="commentsAsk">
+                          <!-- <p style="color: #3b3b3bd9; font-weight: bold;">¿Como invertir en la bolsa de valores por medio de Forex?</p> -->
+                          <p style="color: #3b3b3bd9; font-weight: bold;">{{ item.title }}{{  i}}</p>
+                          <div style="height: 110px;overflow: scroll;">
+                            <p class="commentsBox">
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            </p>
+                          </div>
+                          
+                        </ion-col>
+                      </ion-row>
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-row>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments" lines="none">
+                                <ion-icon slot="start" name="chatbox-outline" class="iconItem" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;20 Comentarios</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments" lines="none">
+                                <ion-icon slot="start" name="eye-outline" class="iconItem" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;200 Visualizaciones</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments" lines="none">
+                                <ion-icon slot="start" name="arrow-redo-outline" class="iconItem" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;20 Compartidas</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments" lines="none">
+                                <ion-icon slot="start" name="add-outline" class="iconItem" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;20 Siguiendo</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            
+                          </ion-row>
+                          
+                        </ion-col>
+                      </ion-row>
+                      <hr class="new1">
+                      <ion-row>
+                        <ion-col size="12">
+                          <ion-row>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments " lines="none">
+                                <ion-icon slot="start" name="add-outline" class="iconItem labelTop" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;20 Siguiendo</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments " lines="none">
+                                <ion-icon slot="start" name="chatbox-ellipses-outline" class="iconItem labelTop" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;Comentar</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments " lines="none">
+                                <ion-icon slot="start" name="open-outline" class="iconItem labelTop" ></ion-icon>
+                                <ion-label class="labelComment">&nbsp;Compartir</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="iconsComments" lines="none">
+                                <ion-icon slot="start" name="add-circle-outline" class="iconItem labelTop"  ></ion-icon>
+                                <ion-label class="labelComment">&nbsp; Seguir pregunta</ion-label>
+                              </ion-item>
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                            <ion-col size="3">
+                              <ion-item class="itemSecond">
+                                <ion-label class="labelSecond">Quién preguntó</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3">
+                              <ion-item class="itemSecond">
+                                <ion-label class="labelSecond">Otras respuestas (30)</ion-label>
+                              </ion-item>
+                            </ion-col>
+                            <ion-col size="3"></ion-col>
+                            <ion-col size="3"></ion-col>
+                          </ion-row>
+                        </ion-col>
+                      </ion-row>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row>
+                    <ion-col size="12">
+                      <ion-chip class="comments">
+                        <ion-icon name="chatbox-outline"></ion-icon>
+                        <ion-label>Comentarios</ion-label>
+                      </ion-chip>
+                    </ion-col>
+                  </ion-row>
+                  <hr/>
+                </ion-grid>
+              </ion-item>
+
+            </div>
+            </ion-col>
+            <ion-col size="4" class="rigthSection">
+              <ion-card >
+                <ion-label class="title">Preguntas por Círculos</ion-label>
+                <ion-item lines="none" *ngFor="let item of articlesMoney.circlesAsk.data">
+                  <ion-chip>
+                    <ion-label class="ion-text-wrap" color="primary">{{ item.title }}</ion-label>
+                  </ion-chip>
+                </ion-item>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>

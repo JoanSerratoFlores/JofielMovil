@@ -101,3 +101,21 @@
     --ion-color-tint: var(--ion-color-customlight-tint);
     --border-radius: var(--border-radius);
 }
+
+:root {
+    --ion-color-orange: #F4870F;
+    --ion-color-orange-rgb: 244, 135, 15;
+    --ion-color-orange-contrast: #ffffff;
+    --ion-color-orange-contrast-rgb: 255, 255, 255;
+    --ion-color-orange-shade: #d7770d;
+    --ion-color-orange-tint: #f59327;
+}
+
+.ion-color-orange {
+    --ion-color-base: var(--ion-color-orange);
+    --ion-color-base-rgb: var(--ion-color-orange-rgb);
+    --ion-color-contrast: var(--ion-color-orange-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-orange-contrast-rgb);
+    --ion-color-shade: var(--ion-color-orange-shade);
+    --ion-color-tint: var(--ion-color-orange-tint);
+}

@@ -1,0 +1,64 @@
+<ion-menu side="start" menuId="first" contentId="principal">
+    <ion-header>
+        <ion-toolbar color="bluebotton">
+            <ion-row>
+                <ion-col size="3">
+                    <ion-img style="width: 125px;" src="assets/iconos/jofiel_blanco-06.svg"></ion-img>
+                </ion-col>
+                <ion-col size="3" offset="6">
+                    <ion-avatar>
+                        <img src="assets/iconos/usuario_admin.svg">
+                    </ion-avatar>
+                </ion-col>
+            </ion-row>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-menu-toggle auto-hide="true">
+                <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+                    <ion-img slot="start" id="icono" src="assets/iconos/home.svg"></ion-img>
+                    <ion-label>
+                        Inicio
+                    </ion-label>
+                </ion-item>
+                <ion-item [routerDirection]="'root'" [routerLink]="'/listado'">
+                    <ion-icon slot="start" name="help-outline"></ion-icon>
+                    <ion-label>
+                        Cuestionario
+                    </ion-label>
+                </ion-item>
+                <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+                    <ion-img slot="start" id="icono" src="assets/iconos/seguidor.svg"></ion-img>
+                    <ion-label>
+                        Suscribirse
+                    </ion-label>
+                </ion-item>
+                <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+                    <ion-img slot="start" id="icono" src="assets/iconos/PERFIL MOBIL/sonido.svg"></ion-img>
+                    <ion-label>
+                        Audio-Trabajos
+                    </ion-label>
+                </ion-item>
+                <ion-item [routerDirection]="'root'" [routerLink]="'/home'">
+                    <ion-img slot="start" id="icono" src="assets/iconos/coin.svg"></ion-img>
+                    <ion-label>
+                        Monetizar
+                    </ion-label>
+                </ion-item>
+                <ion-item [routerDirection]="'root'" [routerLink]="'/listado'">
+                    <ion-img slot="start" id="icono" src="assets/iconos/bell.svg"></ion-img>
+                    <ion-label>
+                        Notificaciones
+                    </ion-label>
+                </ion-item>
+
+                <ion-button class="ion-padding" color="bottonlight" id="pregunta">
+                    <p style="color: white; ">Crea una Pregunta</p>
+                </ion-button>
+
+            </ion-menu-toggle>
+        </ion-list>
+
+    </ion-content>
+</ion-menu>

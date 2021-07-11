@@ -1,0 +1,113 @@
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="9">
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <img src="../../../assets/iconos2/avatar.png" />
+        </ion-avatar>
+        <ion-label class="descLabel">
+          <h2>Norman Riascos</h2>
+          <p>Mag. Ingeniería</p>
+          <p class="descLabelDesc">Apasionado por las tecnologías</p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col size="3" class="perfil">
+      <p>Ver prefil</p>
+    </ion-col>
+  </ion-row>
+  <ion-row class="rowsInteresting">
+    <ion-col size="12">
+      <ion-item lines="none">
+        <ion-label>
+          <p><span>Categorias de Interés</span> <span class="edit"><ion-icon name="pencil-outline"></ion-icon>Editar</span></p>
+          <p class="chips"><span>Deportes</span>&nbsp;<span>Tecnologías</span></p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+    <!-- <ion-col size="6">
+      
+    </ion-col> -->
+    <hr class="new1">
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <ion-list class="menuUserMenu">
+        <ion-item lines="none">
+          
+            <ion-icon name="pencil-outline"></ion-icon>
+          
+          <ion-label>
+            Mi cuenta
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          
+            <ion-icon name="chatbox-outline"></ion-icon>
+          
+          <ion-label>
+            Mensajes
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          
+          <ion-icon name="notifications-outline"></ion-icon>
+          
+          <ion-label>
+            Notificaciones
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          
+          <ion-icon name="grid-outline"></ion-icon>
+          
+          <ion-label>
+            Mi Actividad
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          
+          <ion-icon name="layers-outline"></ion-icon>
+          
+          <ion-label>
+            Datos
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+    <hr class="new1">
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-list class="menuOptionsUserMenu">
+        <ion-item lines="none">
+          <ion-label>
+            <p>Configuración</p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>
+            <p>Privacidad</p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>
+            <p>Cambiar Idioma</p>
+          </ion-label>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label>
+            <p>Términos y condiciones</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-item lines="none" class="closeSession" (click)="logout()">
+        <ion-label>
+          <p>Cerrar Sesión</p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+</ion-grid>

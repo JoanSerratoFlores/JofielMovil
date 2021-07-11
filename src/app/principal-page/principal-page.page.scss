@@ -1,0 +1,79 @@
+ion-toolbar{
+    --background: #073c66;
+        
+        ion-avatar{
+            --border-radius:0%;
+            height: 0%;
+            margin-left: 2%;
+            width: 90px;
+            img{
+                //width: 50%;
+                margin-right: -40%;
+            }
+        }
+        ion-label{
+            color: #fff;
+        }
+    
+    ion-buttons{
+        padding-bottom: 1%;
+        padding-top: 1%;
+        ion-img{
+            width: 25%;
+        }
+        ion-searchbar{
+            --border-radius: 20px;
+            transform: scale(0.8); // Can also scale individually with scaleX() and scaleY()
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 45%;
+        }
+        ion-grid{
+            text-align: center;
+        }
+    }
+}
+
+.headerButtons{
+    
+    /* img{
+        width: 40%;
+    }
+    ion-label{
+        font-size: 70%;
+    } */
+}
+
+.buttonAsk{
+    color: #fff;
+    background-color: #F4870F;
+    border-radius: 5px;
+}
+.grid{
+    ion-row{
+        ion-col{
+            //padding-right: 2%;
+            margin-right: -3%;
+            text-align: center;
+            img{
+                width: 50%;
+            }
+            ion-label{
+                font-size: 75%;
+            }
+        }
+    }
+}
+
+.buttonsStart{
+    margin-right: -15%;
+}
+
+.buttonsEnd{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+  
