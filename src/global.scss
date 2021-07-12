@@ -119,3 +119,57 @@
     --ion-color-shade: var(--ion-color-orange-shade);
     --ion-color-tint: var(--ion-color-orange-tint);
 }
+
+:root {
+    --ion-color-blue: #043C66;
+    --ion-color-blue-rgb: 4, 60, 102;
+    --ion-color-blue-contrast: #ffffff;
+    --ion-color-blue-contrast-rgb: 255, 255, 255;
+    --ion-color-blue-shade: #04355a;
+    --ion-color-blue-tint: #1d5075;
+}
+
+.ion-color-blue {
+    --ion-color-base: var(--ion-color-blue);
+    --ion-color-base-rgb: var(--ion-color-blue-rgb);
+    --ion-color-contrast: var(--ion-color-blue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-blue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-blue-shade);
+    --ion-color-tint: var(--ion-color-blue-tint);
+}
+
+:root {
+    --ion-color-whiteblue: #FFFFFF;
+    --ion-color-whiteblue-rgb: 255, 255, 255;
+    --ion-color-whiteblue-contrast: #043C66;
+    --ion-color-whiteblue-contrast-rgb: 4, 60, 102;
+    --ion-color-whiteblue-shade: #FFFFFF;
+    --ion-color-whiteblue-tint: #FFFFFF;
+}
+
+.ion-color-whiteblue {
+    --ion-color-base: var(--ion-color-whiteblue);
+    --ion-color-base-rgb: var(--ion-color-whiteblue-rgb);
+    --ion-color-contrast: var(--ion-color-whiteblue-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-whiteblue-contrast-rgb);
+    --ion-color-shade: var(--ion-color-whiteblue-shade);
+    --ion-color-tint: var(--ion-color-whiteblue-tint);
+}
+
+:root {
+    --ion-color-orangewhite: #f4870f;
+    --ion-color-orangewhite-rgb: 244, 135, 15;
+    --ion-color-orangewhite-contrast: #ffffff;
+    --ion-color-orangewhite-contrast-rgb: 255, 255, 255;
+    --ion-color-orangewhite-shade: #d7770d;
+    --ion-color-orangewhite-tint: #f59327;
+}
+
+.ion-color-orangewhite {
+    --ion-color-base: var(--ion-color-orangewhite);
+    --ion-color-base-rgb: var(--ion-color-orangewhite-rgb);
+    --ion-color-contrast: var(--ion-color-orangewhite-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-orangewhite-contrast-rgb);
+    --ion-color-shade: var(--ion-color-orangewhite-shade);
+    --ion-color-tint: var(--ion-color-orangewhite-tint);
+}
