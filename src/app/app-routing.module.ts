@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'estudios',
     loadChildren: () => import('./pages/estudios/estudios.module').then( m => m.EstudiosPageModule)
   },
+  {
+    path: 'historial-habilidades',
+    loadChildren: () => import('./modals/historial-habilidades/historial-habilidades.module').then( m => m.HistorialHabilidadesPageModule)
+  },
 ];
 
 @NgModule({
