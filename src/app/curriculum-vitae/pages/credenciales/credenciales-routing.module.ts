@@ -7,6 +7,14 @@ const routes: Routes = [
   {
     path: '',
     component: CredencialesPage
+  },
+  {
+    path: 'new-credencial',
+    loadChildren: () => import('./new-credencial/new-credencial.module').then( m => m.NewCredencialPageModule)
+  },
+  {
+    path: 'edit-credencial',
+    loadChildren: () => import('./edit-credencial/edit-credencial.module').then( m => m.EditCredencialPageModule)
   }
 ];
 

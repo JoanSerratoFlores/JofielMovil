@@ -1,0 +1,9 @@
+ion-progress-bar::after {
+    padding: 10px;
+    display: inline-block;
+    content: '%';
+    font-size: 15px;
+    color: #043C66;
+    font-weight: bold;
+    margin-top: -16px;
+}

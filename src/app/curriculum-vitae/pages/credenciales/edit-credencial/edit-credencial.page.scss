@@ -1,0 +1,57 @@
+ion-select::part(icon) {
+    color: #043C66;
+    opacity: 1;
+}
+
+ion-select::part(text) {
+    color: #043C66;
+}
+
+ion-select::part(placeholder) {
+    color: #043C66;
+    opacity: 1;
+}
+
+ion-select {
+    background-color: #ddd;
+    border-radius: 25px;
+    font-size: 10px;
+}
+
+ion-input {
+    border-radius: 25px;
+    --border-radius: 25px;
+    border: #043C66 1px solid;
+    color: #043C66;
+}
+
+ion-item {
+    border-radius: 25px;
+    --border-radius: 25px;
+    border: #043C66 1px solid;
+    color: #043C66;
+}
+
+ion-checkbox {
+    --border-color: #F4870F;
+}
+
+#anexarcredencial {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-radius: 25px;
+    --border-radius: 25px;
+}
+
+#guardar {
+    --border-radius: 25px;
+    border-radius: 25px;
+    border: #043C66 1px solid;
+    color: #F4870F;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}

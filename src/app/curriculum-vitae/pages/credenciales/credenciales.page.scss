@@ -1,0 +1,33 @@
+#link {
+    float: right;
+    color: #F4870F;
+    text-decoration: underline;
+    text-decoration-color: #043C66;
+    font-size: small;
+}
+
+#vercertificado {
+    --border-radius: 25px;
+    border-radius: 25px;
+    border: #043C66 1px solid;
+    color: #F4870F;
+    font-size: 8px;
+    height: 20px;
+}
+
+#linkcertificado {
+    color: #043C66;
+    position: relative;
+    font-size: x-small;
+    top: 5px;
+}
+
+#agregarcredencial {
+    --border-radius: 25px;
+    border-radius: 25px;
+    border: #043C66 1px solid;
+    color: #F4870F;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

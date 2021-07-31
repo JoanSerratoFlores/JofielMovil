@@ -6,9 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./info.component.scss'],
 })
 export class InfoComponent implements OnInit {
-
+  public image = "../../assets/iconos2/avatar.png"
+  public progress = .15;
+  public porcentaje =0;
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+this.porcentaje = this.progress*100;
+  }
 
 }

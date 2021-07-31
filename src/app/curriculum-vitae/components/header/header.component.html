@@ -1,3 +1,15 @@
-<p>
-  header works!
-</p>
+<ion-header class="mobile-header">
+    <ion-toolbar>
+        <ion-buttons>
+            <ion-img style="width: 75px;" [src]="logoBlanco"></ion-img>
+        </ion-buttons>
+        <ion-buttons *ngFor="let item of headerButtons.data" slot="primary">
+            <img style="width:20px; margin: 9px;" src="{{ item.img }}">
+        </ion-buttons>
+        <ion-buttons slot="end">
+            <ion-avatar>
+                <img src="../../assets/iconos2/avatar.png" />
+            </ion-avatar>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>

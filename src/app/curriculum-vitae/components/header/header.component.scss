@@ -1,0 +1,15 @@
+ion-toolbar {
+    --background: #073c66;
+    ion-avatar {
+        --border-radius: 0%;
+        height: 0%;
+        width: 35px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    ion-buttons {
+        ion-img {
+            width: 125px;
+        }
+    }
+}

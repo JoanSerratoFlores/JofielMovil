@@ -1,3 +1,5 @@
+import { SearchComponent } from './components/popover/search/search.component';
+import { ComponentsModule } from './components/components.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -9,11 +11,15 @@ import { CurriculumVitaePageRoutingModule } from './curriculum-vitae-routing.mod
 import { CurriculumVitaePage } from './curriculum-vitae.page';
 
 @NgModule({
+  entryComponents: [
+    SearchComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CurriculumVitaePageRoutingModule
+    CurriculumVitaePageRoutingModule,
+    ComponentsModule
   ],
   declarations: [CurriculumVitaePage]
 })

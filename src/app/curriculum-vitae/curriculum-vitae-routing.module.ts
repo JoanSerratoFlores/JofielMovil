@@ -51,7 +51,15 @@ const routes: Routes = [
   {
     path: 'inicio',
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
-  }
+  },
+  {
+    path: 'credenciales-academicas',
+    loadChildren: () => import('./pages/credenciales-academicas/credenciales-academicas.module').then( m => m.CredencialesAcademicasPageModule)
+  },
+  {
+    path: 'credenciales-laborales',
+    loadChildren: () => import('./pages/credenciales-laborales/credenciales-laborales.module').then( m => m.CredencialesLaboralesPageModule)
+  },
 ];
 
 @NgModule({

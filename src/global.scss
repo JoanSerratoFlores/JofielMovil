@@ -173,3 +173,33 @@
     --ion-color-shade: var(--ion-color-orangewhite-shade);
     --ion-color-tint: var(--ion-color-orangewhite-tint);
 }
+
+.popoversearch {
+    ion-backdrop {
+        background-color: #04355a;
+    }
+    .popover-wrapper {
+        .popover-arrow::after {
+            background-color: #F4870F !important;
+        }
+        .popover-content {
+            app-popover {}
+            width: 90vw;
+            height: 22vw;
+            border: #F4870F 2px solid;
+            margin-left: -13px;
+        }
+    }
+}
+
+.popoverselectoption {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: 86%;
+            font-size: x-small;
+        }
+    }
+}
