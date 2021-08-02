@@ -29,7 +29,7 @@ export class HeaderComponent implements OnInit {
         label:"Audio-Artículos"
       },
       {
-        img: "../../../assets/iconos/monetiza.png",
+        img: "../../../assets/iconos/mensaje.png",
         label:"Monetizar"
       },
       {

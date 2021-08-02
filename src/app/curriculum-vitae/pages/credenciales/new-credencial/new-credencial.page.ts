@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-new-credencial',
@@ -7,8 +8,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewCredencialPage implements OnInit {
 
-  constructor() { }
+  constructor(public alertCtrl: AlertController) { }
 
   ngOnInit() {
+  }
+
+  async presentAlert() {
+    const alert = await this.alertCtrl.create({
+      cssClass: 'alertcustomclasscss',
+      message: 'Seguro que desea guardar estos cambios?',
+      buttons: [
+        {
+          text: 'No',
+          role: 'cancel',
+          cssClass: 'btnconfirm',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          cssClass: 'btnconfirm',
+          text: 'Si  ',
+          handler: () => {
+            console.log('Confirm Okay');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
 }
