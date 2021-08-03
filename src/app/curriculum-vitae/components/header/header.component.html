@@ -1,15 +1,32 @@
 <ion-header class="mobile-header">
     <ion-toolbar>
-        <ion-buttons>
-            <ion-img style="width: 75px;" [src]="logoBlanco"></ion-img>
-        </ion-buttons>
-        <ion-buttons *ngFor="let item of headerButtons.data" slot="primary">
-            <img style="width:20px; margin: 9px;" src="{{ item.img }}">
-        </ion-buttons>
-        <ion-buttons slot="end">
+        <ion-row>
+            <ion-buttons size="3">
+                <ion-img style="width: 75px;" [src]="logoBlanco"></ion-img>
+            </ion-buttons>
+            <ion-col style="margin:5px" size="1">
+                <ion-img style="width:25px;" src="../../../assets/iconos/inicio.png"></ion-img>
+            </ion-col>
+            <ion-col style="margin:5px" size="1">
+                <ion-img style="width:25px;" src="../../../assets/iconos/cuestionarios.png"></ion-img>
+            </ion-col>
+            <ion-col style="margin:5px" size="1">
+                <ion-img style="width:25px;" src="../../assets/iconos/suscribirse.png"></ion-img>
+            </ion-col>
+            <ion-col style="margin:5px" size="1">
+                <ion-img style="width:25px;" src="../../../assets/iconos/sonido.svg"></ion-img>
+            </ion-col>
+            <ion-col style="margin:5px" size="1">
+                <ion-badge color="primary">11</ion-badge>
+                <ion-img style="width:25px;" src="../../../assets/iconos/mensaje.png"></ion-img>
+            </ion-col>
+            <ion-col style="margin:5px" size="1">
+                <ion-badge>11</ion-badge>
+                <ion-img style="width:20px;" src="../../../assets/iconos/noti.png"></ion-img>
+            </ion-col>
             <ion-avatar>
                 <img src="../../assets/iconos2/avatar.png" />
             </ion-avatar>
-        </ion-buttons>
+        </ion-row>
     </ion-toolbar>
 </ion-header>
