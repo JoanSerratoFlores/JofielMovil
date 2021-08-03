@@ -1,0 +1,17 @@
+ion-progress-bar {
+    border-radius: 50px;
+    --border-radius: 50px;
+    border: #043C66 2px solid;
+    --background: white;
+    --buffer-background: white;
+    --progress-background: #F4870F;
+    height: 20px;
+}
+
+#porcentaje {
+    position: relative;
+    bottom: 17px;
+    left: 100%;
+    color: #073c66;
+    font-weight: bolder;
+}

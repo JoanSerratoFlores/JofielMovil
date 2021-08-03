@@ -1,9 +1,64 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>curriculum-vitae</ion-title>
-  </ion-toolbar>
+    <app-header></app-header>
 </ion-header>
 
 <ion-content>
+    <ion-card class="ion-padding">
+        <app-info></app-info>
+        <ion-row>
+            <ion-col class="ion-no-padding" size="3"></ion-col>
+            <ion-col class="ion-no-padding" size="5.5">
+                <app-progressbar></app-progressbar>
+            </ion-col>
+            <ion-col size="1">
+
+            </ion-col>
+            <ion-col class="ion-margin-top ion-no-padding" size="2.5">
+                <a id="link" style="font-size: smaller;" href="curriculum-vitae/credenciales-academicas" class="underline">
+                Agregar
+                <ion-icon name="brush"></ion-icon>
+              </a> </ion-col>
+        </ion-row>
+    </ion-card>
+    <ion-card class="ion-padding">
+        <b style="color: #F4870F; font-size: 30px;">Hola</b>
+        <p class="ion-no-margin" style="color: #043C66; font-weight: bold;">Norman Riascos</p>
+        <p class="ion-no-margin">Termina de completar tu perfil</p>
+    </ion-card>
+    <ion-card class="ion-padding">
+        <ion-row>
+            <ion-col size="9">
+                <div style="color: #043C66; font-weight: bold;font-size: large;">
+                    Credenciales Academicas
+                </div>
+            </ion-col>
+            <ion-col size="3">
+                <div>
+                    <a id="link" href="curriculum-vitae/credenciales-academicas" class="underline">
+                    Agregar
+                    <ion-icon name="brush"></ion-icon>
+                  </a>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="9">
+                <div style="color: #043C66; font-weight: bold;font-size: large;">
+                    Credenciales Laborales
+                </div>
+            </ion-col>
+            <ion-col size="3">
+                <div>
+                    <a id="link" href="curriculum-vitae/credenciales-laborales" class="underline">
+                  Agregar
+                  <ion-icon name="brush"></ion-icon>
+                </a>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-card>
 
 </ion-content>
+<ion-footer style="background-color: #f3f3f3;" class="ion-no-border">
+    <app-footer></app-footer>
+</ion-footer>

@@ -18,29 +18,10 @@
         grid-row-end: 3;
     }
     
-    ion-progress-bar {
-        border-radius: 50px;
-        --border-radius: 50px;
-        border: #043C66 2px solid;
-        --background: white;
-        --buffer-background: white;
-        --progress-background: #F4870F;
-        height: 20px;
-    }
-    
     #link {
         float: right;
         color: #F4870F;
         text-decoration: underline;
         text-decoration-color: #043C66;
         font-size: 13px;
-        margin-top: 15px;
-    }
-    
-    #porcentaje {
-        font-weight: bold;
-        color: #043C66;
-        font-size: 16px;
-        position: relative;
-        top: 47%;
     }
