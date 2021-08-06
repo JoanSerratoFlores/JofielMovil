@@ -1,0 +1,59 @@
+<ion-content>
+    <ion-grid class="bg-image">
+        <ion-row>
+            <ion-col class="login ion-padding">
+                <ion-row class="ion-text-center">
+                    <ion-col style="background-color: orange;">
+                        <ion-img src=" assets/iconos/jofiel_blanco-06.png "></ion-img>
+                        <ion-label style="color: white;">Tu Red Social de Conocimiento</ion-label>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-label class="ion-padding-top">Iniciar Sesion</ion-label>
+                </ion-row>
+                <ion-row style="border-bottom: grey 2px solid;">
+                    <h1 class="ion-no-margin" style="font-weight: bold;">Admin</h1>
+                </ion-row>
+                <form>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-input type="text" placeholder="Nombre de Usuario o Email" class="nombre" required></ion-input>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-input type="password" placeholder="Contrasena" class="contrasena" required></ion-input>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="5.5">
+                            <ion-checkbox id="customCheck1"></ion-checkbox>
+                            <ion-label style="position: relative; bottom: 3px;" for="customCheck1">Recordarme</ion-label>
+                        </ion-col>
+                        <ion-col>
+                            <a style="color: blue; font-size: smaller" href="# ">¿Olvidaste tu contraseña?</a>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row style="border-bottom: grey 2px solid; ">
+                        <ion-col size="12 ">
+                            <ion-button class="iniciar" type="submit" color="orange">Iniciar</ion-button>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="12">
+                            <p style="line-height:16px;">Digite el código de seguridad que enviamos por msn al número móvil registrado</p>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col size="8">
+                            <ion-input type="text" id="inputPassword" class="inputPassword form-control" required></ion-input>
+                        </ion-col>
+                        <ion-col size="2">
+                            <ion-button style="border-radius: 10px;" color="orange" type="submit">Validar</ion-button>
+                        </ion-col>
+                    </ion-row>
+                </form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

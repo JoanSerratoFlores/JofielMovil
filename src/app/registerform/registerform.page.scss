@@ -1,0 +1,119 @@
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .registerform {
+        background-color: white;
+        top: 10px;
+    }
+    
+    #input {
+        border: grey 1px solid;
+        border-radius: 10px;
+        color: #073c66;
+    }
+    
+    #rr ion-col>div {
+        background-color: grey;
+        border: solid 1px #ddd;
+        border-radius: 12px;
+        padding: 10px;
+        color: white;
+    }
+    
+    #caja {
+        border: 1px grey solid;
+        position: relative;
+        bottom: 18px;
+        border-radius: 0px 0px 12px 12px;
+    }
+    
+    #buscar {
+        border: 1px #073c66 solid;
+        border-radius: 23px;
+        --border-radius: 23px;
+        .searchbar-input.sc-ion-searchbar-md {
+            padding: 0px;
+        }
+    }
+    
+    #item {
+        background-color: #043C66;
+        border-radius: 15px;
+        color: white;
+        margin: 5px;
+        font-size: 14px;
+        width: 100%;
+    }
+    
+    #Guardar {
+        border: 2px solid #F4870F;
+        border-radius: 25px;
+        --border-radius: 25px;
+        --background: white;
+        color: #073c66;
+        border-radius: 25px;
+        background-color: white;
+    }
+    
+    #Omitir {
+        border: 2px solid #F4870F;
+        border-radius: 25px;
+        --border-radius: 25px;
+        --background: white;
+        color: #073c66;
+    }
+    
+    #titulo {
+        background-color: #043C66;
+        border-radius: 12px 12px 5px 5px;
+        color: white;
+        font-size: 15px;
+    }
+    
+    ion-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 150px;
+    }
+    
+    ion-toolbar {
+        --background: #073c66;
+        --min-height: 56px;
+        --opacity: 1;
+        --padding-bottom: 0px;
+        --padding-end: 0px;
+        --padding-start: 0px;
+        --padding-top: 0px;
+        ion-img {
+            float: left;
+            position: relative;
+            width: 75px;
+        }
+    }
+    
+    ion-checkbox {
+        border-color: orange;
+    }
+    
+    @media (max-width: 768px) {
+        .registerform {
+            position: absolute;
+            background-color: white;
+            width: 95%;
+            right: 9px;
+            top: 5%;
+        }
+    }
+    
+    @media (max-width:320px) {
+        .registerform {
+            position: absolute;
+            background-color: white;
+            width: 95%;
+            right: 9px;
+            top: 1%;
+        }
+    }
