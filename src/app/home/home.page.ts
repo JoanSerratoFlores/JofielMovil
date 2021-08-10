@@ -3,6 +3,7 @@ import { RespuestaComponent } from './components/respuesta/respuesta.component';
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { ModalComponent } from './components/modal/modal.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ import { ModalComponent } from './components/modal/modal.component';
 })
 export class HomePage implements OnInit {
  
-  constructor(public popoverController: PopoverController) {}
+  constructor(public popoverController: PopoverController,public router:Router) {}
 
   async presentPopover() {
     const popover = await this.popoverController.create({
@@ -49,6 +50,10 @@ export class HomePage implements OnInit {
 
     const { role } = await popover.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
+  }
+  topregunta()
+  {
+    this.router.navigateByUrl("pregunta");
   }
     
   ngOnInit() {

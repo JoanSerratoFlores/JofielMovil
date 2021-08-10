@@ -100,12 +100,12 @@
             <p class="ion-no-margin" style="font-size:x-small;">Quien pregunto</p>
             <p class="ion-no-margin ion-margin-start" style="font-size:x-small;">Otras respuestas(30)</p>
         </ion-row>
-        <ion-row style="padding: 0px 0px 0px 16px;border-bottom: grey 2px solid;">
+        <ion-row style="padding: 0px 0px 0px 16px;background-color: #ddd;border-radius: 25px;margin: 10px 10px 0px 10px;">
             <ion-img style="width:33px;" src="assets/iconos/mensaje.svg "></ion-img>
             <p style="padding-left: 10px;">Comentarios</p>
         </ion-row>
     </ion-grid>
-    <ion-grid fixed>
+    <ion-grid style="border-top:grey 2px solid;" fixed>
         <ion-row class="cajacomentarioprincipal">
             <ion-col size="1.5" class="ion-no-padding">
                 <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
@@ -232,7 +232,7 @@
         </ion-row>
     </ion-grid>
     <ion-fab horizontal="end" vertical="bottom" slot="fixed">
-        <ion-fab-button color="orange" color="light">
+        <ion-fab-button color="light" (click)="topregunta()">
             <ion-icon color="orange" name="add-outline"></ion-icon>
         </ion-fab-button>
     </ion-fab>
