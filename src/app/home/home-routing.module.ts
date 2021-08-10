@@ -6,8 +6,16 @@ import { HomePage } from './home.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage
-  }
+    component: HomePage,
+    children:
+    [
+      { 
+        path:'tecnologias',
+        redirectTo: '/tecnologias',
+        pathMatch: 'full'      
+      }
+    ]
+  },
 ];
 
 @NgModule({

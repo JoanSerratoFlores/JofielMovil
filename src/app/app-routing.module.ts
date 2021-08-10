@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'splash',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -71,6 +71,11 @@ const routes: Routes = [
     path: 'registerform',
     loadChildren: () => import('./registerform/registerform.module').then( m => m.RegisterformPageModule)
   },
+  {
+    path: 'pregunta',
+    loadChildren: () => import('./pregunta/pregunta.module').then( m => m.PreguntaPageModule)
+  },
+
 
 
 ];

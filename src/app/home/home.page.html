@@ -2,13 +2,13 @@
     <ion-toolbar id="header">
         <ion-row>
             <ion-col size="3">
-                <ion-img src="assets/iconos/logo.png"></ion-img>
+                <ion-img style="width: 75px;" src="assets/iconos/logo.png"></ion-img>
             </ion-col>
             <ion-col size="1.5" style="margin: 10px 0px 0px 5px;">
-                <ion-img style=" width: 30px;" src="assets\/iconos/inicio.png"></ion-img>
+                <ion-img style=" width: 30px;" src="assets/iconos/inicio.png"></ion-img>
             </ion-col>
             <ion-col size="1.5" style="margin: 10px 0px 0px 45%;">
-                <ion-img style=" width: 30px;" src="assets\/iconos2/avatar.png"></ion-img>
+                <ion-img style=" width: 30px;" src="assets/iconos2/avatar.png"></ion-img>
             </ion-col>
         </ion-row>
     </ion-toolbar>
@@ -58,11 +58,18 @@
             </ion-col>
         </ion-row>
         <ion-row class="ion-padding ion-no-margin">
-            <ion-col size="12">
-                <b style="font-size: small;">Como invertir en la bolsa de valores por medio de Forex?</b>
-                <p class="ion-text-justify" style="font-size:smaller;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander
+            <ion-row class="ion-no-padding">
+                <ion-col size="12">
+                    <b class="ion-no-padding" style="font-size: small;">Como invertir en la bolsa de valores por medio de Forex?</b>
+                </ion-col>
+            </ion-row>
+            <ion-col size="11">
+                <p class="ion-text-justify" style="font-size:smaller; margin-top: 0px;">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander
                     warf um ein Musterbuch zu erstellen.
                 </p>
+            </ion-col>
+            <ion-col size="1">
+                <ion-icon class="ion-padding-top" (click)="presentPopover()" name="ellipsis-horizontal-outline"></ion-icon>
             </ion-col>
             <ion-row class="btnreaction ion-justify-content-center ion-no-margin">
                 <ion-icon name="chatbox-outline"></ion-icon>
@@ -76,7 +83,7 @@
             </ion-row>
         </ion-row>
         <ion-row class="cajareaccion ion-justify-content-center ion-no-margin">
-            <ion-img src="assets/icon/calp.png"></ion-img>
+            <ion-img src="assets/icon/calp.png" (click)="Popoverrespuesta($event)"></ion-img>
             <p>50</p>
             <ion-icon name="thumbs-up-outline" color="orange"></ion-icon>
             <p>50</p>
@@ -100,7 +107,7 @@
     </ion-grid>
     <ion-grid fixed>
         <ion-row class="cajacomentarioprincipal">
-            <ion-col size="1.5">
+            <ion-col size="1.5" class="ion-no-padding">
                 <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
             </ion-col>
             <ion-col class="commentusuario" size="10">
@@ -129,8 +136,8 @@
                 <ion-icon class="ion-margin-start" name="chatbox-outline" color="orange"></ion-icon>
                 <p>Comentar</p>
             </ion-row>
-            <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;">
-                <ion-col size="1.5">
+            <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;" size="12">
+                <ion-col size="1.5" class="ion-no-padding">
                     <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
                 </ion-col>
                 <ion-col class="commentusuario" size="10">
@@ -161,7 +168,7 @@
                 </ion-row>
             </ion-row>
             <ion-row class="cajacomentarioprincipal" style="margin: 0px 0px 0px 10%;">
-                <ion-col size="1.5">
+                <ion-col size="1.5" class="ion-no-padding">
                     <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
                 </ion-col>
                 <ion-col class="commentusuario" size="10">
@@ -193,7 +200,7 @@
             </ion-row>
         </ion-row>
         <ion-row class="cajacomentarioprincipal">
-            <ion-col size="1.5">
+            <ion-col size="1.5" class="ion-no-padding">
                 <ion-img style="height: 50px;" src="assets/iconos2/avatar.png "></ion-img>
             </ion-col>
             <ion-col class="commentusuario" size="10">
@@ -234,7 +241,7 @@
     <ion-toolbar>
         <ion-tabs>
             <ion-tab-bar slot="bottom">
-                <ion-tab-button tab="schedule">
+                <ion-tab-button tab="tecnologias">
                     <ion-icon color="orange" name="image-outline"></ion-icon>
                 </ion-tab-button>
 
@@ -256,7 +263,7 @@
                     <ion-badge>6</ion-badge>
                 </ion-tab-button>
 
-                <ion-tab-button tab="about">
+                <ion-tab-button (click)="Popoversearch($event)">
                     <ion-icon color="orange" name="search-outline"></ion-icon>
                 </ion-tab-button>
             </ion-tab-bar>

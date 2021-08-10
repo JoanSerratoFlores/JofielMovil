@@ -185,7 +185,7 @@
         .popover-content {
             app-popover {}
             width: 90vw;
-            height: 22vw;
+            height: fit-content;
             border: #F4870F 2px solid;
             margin-left: -13px;
         }
@@ -200,6 +200,17 @@
             app-popover {}
             width: 86%;
             font-size: x-small;
+        }
+    }
+}
+
+.popoverrespuesta {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: fit-content;
         }
     }
 }

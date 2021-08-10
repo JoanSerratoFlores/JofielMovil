@@ -1,5 +1,7 @@
 {
   "name": "Jofiel",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
