@@ -1,0 +1,86 @@
+#header {
+    --background: #073c66;
+    .btnheader {
+        position: absolute;
+        right: 15px;
+        top: 7px;
+        ion-img {
+            width: 30px;
+        }
+    }
+}
+
+#notification {
+    position: absolute;
+    right: 20%;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+#mensaje {
+    position: absolute;
+    right: 40%;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+#Yo {
+    border-radius: 50px;
+    height: fit-content;
+    right: 8px;
+    bottom: -7px;
+    position: absolute;
+}
+
+#agregar {
+    --border-radius: 25px;
+    border-radius: 25px;
+    border: #073c66 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#cancelar {
+    --border-radius: 25px;
+    border-radius: 25px;
+    border: #073c66 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#link {
+    border: #073c66 1px solid;
+    border-radius: 10px;
+}
+
+@media (max-width: 320px) {
+    #header {
+        .btnheader {
+            ion-img {
+                width: 25px;
+                margin-inline-start: 10px;
+                position: relative;
+                left: 10px;
+            }
+        }
+    }
+    #mensaje {
+        right: 35%;
+    }
+    #notification {
+        right: 15%;
+    }
+    #Yo {
+        right: -2px;
+    }
+}
+
+#añadirpregunta {
+    --border-radius: 10px;
+    border-radius: 10px;
+    border: #073c66 1px solid;
+}

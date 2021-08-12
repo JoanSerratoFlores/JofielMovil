@@ -157,12 +157,12 @@
 }
 
 :root {
-    --ion-color-orangewhite: #f4870f;
-    --ion-color-orangewhite-rgb: 244, 135, 15;
-    --ion-color-orangewhite-contrast: #ffffff;
-    --ion-color-orangewhite-contrast-rgb: 255, 255, 255;
-    --ion-color-orangewhite-shade: #d7770d;
-    --ion-color-orangewhite-tint: #f59327;
+    --ion-color-orangewhite: #ffffff;
+    --ion-color-orangewhite-rgb: 255, 255, 255;
+    --ion-color-orangewhite-contrast: #f4870f;
+    --ion-color-orangewhite-contrast-rgb: 244, 135, 15;
+    --ion-color-orangewhite-shade: #ffffff;
+    --ion-color-orangewhite-tint: #ffffff;
 }
 
 .ion-color-orangewhite {
@@ -211,6 +211,49 @@
         .popover-content {
             app-popover {}
             width: fit-content;
+        }
+    }
+}
+
+.popoverpublico {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: fit-content;
+            position: absolute;
+            margin: -155px 0px 0px 0px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .popoverpublico {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                position: absolute;
+                margin: -100px 0px 0px 25px;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .popoverpublico {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                position: absolute;
+                margin: -100px 0px 0px 25px;
+            }
         }
     }
 }

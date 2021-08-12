@@ -1,5 +1,13 @@
 #header {
     --background: #073c66;
+    .btnheader {
+        position: absolute;
+        right: 15px;
+        top: 7px;
+        ion-img {
+            width: 30px;
+        }
+    }
 }
 
 #follow {
@@ -79,6 +87,28 @@
     margin-top: 3px;
 }
 
+#notification {
+    position: absolute;
+    right: 20%;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+#mensaje {
+    position: absolute;
+    right: 40%;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+#Yo {
+    border-radius: 50px;
+    height: fit-content;
+    right: 8px;
+    bottom: -7px;
+    position: absolute;
+}
+
 .cajareaccion {
     ion-img {
         width: 17px;
@@ -129,5 +159,27 @@
 @media (max-width:720px) {
     .reaction {
         margin: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width:320px) {
+    #header {
+        .btnheader {
+            ion-img {
+                width: 25px;
+                margin-inline-start: 10px;
+                position: relative;
+                left: 10px;
+            }
+        }
+    }
+    #mensaje {
+        right: 35%;
+    }
+    #notification {
+        right: 15%;
+    }
+    #Yo {
+        right: -2px;
     }
 }

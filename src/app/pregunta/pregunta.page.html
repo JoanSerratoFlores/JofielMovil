@@ -4,12 +4,16 @@
             <ion-col size="3">
                 <ion-img style="width: 75px;" src="assets/iconos/logo.png"></ion-img>
             </ion-col>
-            <ion-col size="1.5" style="margin: 10px 0px 0px 5px;">
-                <ion-img style=" width: 30px;" src="assets/iconos/inicio.png"></ion-img>
-            </ion-col>
-            <ion-col size="1.5" style="margin: 10px 0px 0px 45%;">
-                <ion-img style=" width: 30px;" src="assets/iconos2/avatar.png"></ion-img>
-            </ion-col>
+            <ion-row class="btnheader">
+                <ion-img src="assets/iconos/inicio.png"></ion-img>
+                <ion-img class="ion-margin-start" src="assets/iconos/audio.png"></ion-img>
+                <ion-img class="ion-margin-start" src="assets/iconos/mensaje.png"></ion-img>
+                <ion-badge color="whiteblue" id="mensaje">6</ion-badge>
+                <ion-img class="ion-margin-start" src="assets/iconos/noti.png"></ion-img>
+                <ion-badge color="whiteblue" id="notification">7</ion-badge>
+                <ion-img class="ion-margin-start" style="width: 40px;" src="assets/iconos2/avatar.png"></ion-img>
+                <ion-badge color="whiteblue" id="Yo">Yo</ion-badge>
+            </ion-row>
         </ion-row>
     </ion-toolbar>
 </ion-header>
@@ -20,7 +24,7 @@
             Aprende mas rapido y facil escuchando audio-articulos y respondiendo cuestionarios
         </ion-col>
     </ion-row>
-    <ion-row style="margin: 0px 10px 0px 10px;background-color: #ddd;border-radius: 25px;">
+    <ion-row style="margin: 0px 10px 0px 10px;background-color: #ddd;border-radius: 25px;" (click)="ModalPregunta()">
         <ion-img style="width:33px;" src="assets/iconos/mensaje.svg"></ion-img>
         <p style="padding-left: 10px;font-size: small;">Haz una pregunta a la comunidad!</p>
     </ion-row>
@@ -29,7 +33,7 @@
             <ion-icon color="orange" name="image-outline"></ion-icon>
             <ion-label class="ion-margin-start">Foto</ion-label>
         </ion-col>
-        <ion-col>
+        <ion-col (click)="ModalLink()">
             <ion-icon color="orange" name="link-outline"></ion-icon>
             <ion-label class="ion-margin-start">Link</ion-label>
         </ion-col>
@@ -244,5 +248,7 @@
     </ion-grid>
 </ion-content>
 
-<ion-footer>
+<ion-footer style="background-color: #ddd;height: 8%;">
+    <ion-col size="12">
+    </ion-col>
 </ion-footer>
