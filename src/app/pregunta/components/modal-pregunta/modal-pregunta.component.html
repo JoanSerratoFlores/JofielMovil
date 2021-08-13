@@ -53,17 +53,17 @@
             <ion-row>
                 <ion-col size="2">
                     <ion-img src="assets/iconos/mensaje.svg"></ion-img>
-                    `</ion-col>
+                </ion-col>
                 <ion-col size="10">
                     <ion-textarea rows="8" placeholder="Haz una pregunta a la comunidad"></ion-textarea>
                 </ion-col>
             </ion-row>
             <ion-row>
                 <ion-col>
-                    <p style="font-size:9px;">Puedes agregar un conjunto de temas relacionados con tu pregunta</p>
+                    <p style="font-size:9px;width: 165%;">Puedes agregar un conjunto de temas relacionados con tu pregunta</p>
                 </ion-col>
-                <ion-col size="4">
-                    <ion-button id="temas" size="small" color="orangewhite">
+                <ion-col>
+                    <ion-button id="temas" size="small" color="orangewhite" (click)="PopoverTema($event)">
                         Temas
                     </ion-button>
                 </ion-col>

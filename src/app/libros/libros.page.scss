@@ -1,0 +1,56 @@
+    #header {
+        --background: #073c66;
+        .btnheader {
+            position: absolute;
+            right: 15px;
+            top: 7px;
+            ion-img {
+                width: 20px;
+            }
+        }
+        #notification {
+            position: absolute;
+            right: 20%;
+            border-radius: 50px;
+            height: fit-content;
+        }
+        #mensaje {
+            position: absolute;
+            right: 33%;
+            border-radius: 50px;
+            height: fit-content;
+        }
+        #Yo {
+            border-radius: 50px;
+            height: fit-content;
+            right: 8px;
+            bottom: -7px;
+            position: absolute;
+        }
+    }
+    
+    .contenido {
+        p {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    #vermas {
+        border-radius: 25px;
+        --border-radius: 25px;
+        --background: #ddd;
+    }
+    
+    ion-select {
+        width: fit-content;
+        margin: auto;
+    }
+    
+    ion-select::part(icon) {
+        color: #043C66;
+        opacity: 1;
+    }

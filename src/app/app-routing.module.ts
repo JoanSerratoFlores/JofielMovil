@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./curriculum-vitae/pages/articulos-academicos/articulos-academicos.module').then( m => m.ArticulosAcademicosPageModule)
   },
   {
-    path: 'libros',
+    path: 'clibros',
     loadChildren: () => import('./curriculum-vitae/pages/libros/libros.module').then( m => m.LibrosPageModule)
   },
   {
@@ -75,6 +75,11 @@ const routes: Routes = [
     path: 'pregunta',
     loadChildren: () => import('./pregunta/pregunta.module').then( m => m.PreguntaPageModule)
   },
+  {
+    path: 'libros',
+    loadChildren: () => import('./libros/libros.module').then( m => m.LibrosPageModule)
+  },
+
 
 
 

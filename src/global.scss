@@ -215,6 +215,19 @@
     }
 }
 
+.popovertema {
+    ion-backdrop {}
+    .popover-wrapper {
+        .popover-arrow::after {}
+        .popover-content {
+            app-popover {}
+            width: fit-content;
+            height: fit-content;
+            border-radius: 25px;
+        }
+    }
+}
+
 .popoverpublico {
     ion-backdrop {}
     .popover-wrapper {
@@ -223,12 +236,71 @@
             app-popover {}
             width: fit-content;
             position: absolute;
-            margin: -155px 0px 0px 0px;
         }
     }
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 375px) {
+    .popoverpublico {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                position: absolute;
+                margin: -200px 0px 0px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) {
+    .popoverpublico {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                position: absolute;
+                margin: -110px 0px 0px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .popoverpublico {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                position: absolute;
+                margin: -85px 0px 0px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 411px) {
+    .popoverpublico {
+        ion-backdrop {}
+        .popover-wrapper {
+            .popover-arrow::after {}
+            .popover-content {
+                app-popover {}
+                width: fit-content;
+                position: absolute;
+                margin: -200px 0px 0px 40px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
     .popoverpublico {
         ion-backdrop {}
         .popover-wrapper {
@@ -243,7 +315,7 @@
     }
 }
 
-@media (max-width:1024px) {
+@media only screen and (min-width:1024px) {
     .popoverpublico {
         ion-backdrop {}
         .popover-wrapper {
