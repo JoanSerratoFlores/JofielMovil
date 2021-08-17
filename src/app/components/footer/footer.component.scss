@@ -1,0 +1,21 @@
+@media (max-width:320px) {
+    #header {
+        .btnheader {
+            ion-img {
+                width: 25px;
+                margin-inline-start: 10px;
+                position: relative;
+                left: 10px;
+            }
+        }
+    }
+    #mensaje {
+        right: 35%;
+    }
+    #notification {
+        right: 15%;
+    }
+    #Yo {
+        right: -2px;
+    }
+}

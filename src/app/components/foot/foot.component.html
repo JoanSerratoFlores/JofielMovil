@@ -1,0 +1,31 @@
+<ion-toolbar>
+    <ion-tabs>
+        <ion-tab-bar slot="bottom">
+            <ion-tab-button>
+                <ion-icon color="orange" name="image-outline"></ion-icon>
+            </ion-tab-button>
+
+            <ion-tab-button>
+                <ion-icon color="orange" name="chatbox-outline"></ion-icon>
+                <ion-badge>6</ion-badge>
+            </ion-tab-button>
+
+            <ion-tab-button>
+                <ion-img style="width:25px;" src="assets/iconos/circulos.png"></ion-img>
+            </ion-tab-button>
+
+            <ion-tab-button>
+                <ion-img style="width:25px;" src="assets/iconos/mensajepregunta.png"></ion-img>
+            </ion-tab-button>
+
+            <ion-tab-button>
+                <ion-icon color="orange" name="notifications-outline"></ion-icon>
+                <ion-badge>6</ion-badge>
+            </ion-tab-button>
+
+            <ion-tab-button (click)="Popoversearch($event)">
+                <ion-icon color="orange" name="search-outline"></ion-icon>
+            </ion-tab-button>
+        </ion-tab-bar>
+    </ion-tabs>
+</ion-toolbar>

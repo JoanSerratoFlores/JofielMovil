@@ -7,14 +7,6 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
-    children:
-    [
-      { 
-        path:'tecnologias',
-        redirectTo: '/tecnologias',
-        pathMatch: 'full'      
-      }
-    ]
   },
 ];
 

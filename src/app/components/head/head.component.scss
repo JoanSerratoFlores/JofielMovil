@@ -1,0 +1,109 @@
+#header {
+    --background: #073c66;
+    .btnheader {
+        position: absolute;
+        right: 1%;
+        top: 10%;
+        ion-img {
+            width: 20px;
+        }
+    }
+    #notification {
+        position: absolute;
+        right: 20%;
+        border-radius: 50px;
+        height: fit-content;
+    }
+    #mensaje {
+        position: absolute;
+        right: 33%;
+        border-radius: 50px;
+        height: fit-content;
+    }
+    #Yo {
+        border-radius: 50px;
+        height: fit-content;
+        right: 8px;
+        bottom: -7px;
+        position: absolute;
+    }
+    #logo {
+        width: 75%;
+    }
+    #avatar {
+        width: 40px;
+    }
+}
+
+@media (max-width:280px) {
+    #header {
+        .btnheader {
+            right: 0%;
+            ion-img {
+                width: 16px;
+            }
+        }
+        #logo {
+            width: 75%;
+        }
+        #notification {
+            right: 20%;
+            font-size: xx-small;
+        }
+        #mensaje {
+            right: 35%;
+            font-size: xx-small;
+        }
+        #Yo {
+            right: 8px;
+            font-size: xx-small;
+        }
+        #avatar {
+            width: 35px;
+        }
+    }
+}
+
+@media (min-width:768px) {
+    #header {
+        .btnheader {
+            ion-img {
+                width: 40px;
+            }
+        }
+        #logo {
+            width: 55%;
+        }
+        #notification {
+            right: 15%;
+        }
+        #mensaje {
+            right: 28%;
+        }
+        #Yo {
+            right: 5px;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    #header {
+        .btnheader {
+            ion-img {
+                width: 40px;
+            }
+        }
+        #logo {
+            width: 50%;
+        }
+        #notification {
+            right: 15%;
+        }
+        #mensaje {
+            right: 28%;
+        }
+        #Yo {
+            right: 8px;
+        }
+    }
+}

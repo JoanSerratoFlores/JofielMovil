@@ -7,10 +7,6 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'splash',
-    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
-  },
-  {
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
@@ -78,7 +74,8 @@ const routes: Routes = [
   {
     path: 'libros',
     loadChildren: () => import('./libros/libros.module').then( m => m.LibrosPageModule)
-  },  {
+  },
+  {
     path: 'cuestion',
     loadChildren: () => import('./cuestion/cuestion.module').then( m => m.CuestionPageModule)
   },

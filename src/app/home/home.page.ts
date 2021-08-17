@@ -39,27 +39,9 @@ export class HomePage implements OnInit {
     const { role } = await popover.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
   }
-  async Popoversearch(ev: any) {
-    const popover = await this.popoverController.create({
-      component: SearchComponent,
-      cssClass: 'popoversearch',
-      event: ev,
-      translucent: true
-    });
-    await popover.present();
-
-    const { role } = await popover.onDidDismiss();
-    console.log('onDidDismiss resolved with role', role);
-  }
   topregunta()
   {
     this.router.navigateByUrl("pregunta");
-  }
-  tocv(){
-    this.router.navigateByUrl("curriculum-vitae")
-  }
-  tocuestion(){
-    this.router.navigateByUrl("cuestion")
   }
     
   ngOnInit() {
