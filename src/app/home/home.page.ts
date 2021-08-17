@@ -55,6 +55,12 @@ export class HomePage implements OnInit {
   {
     this.router.navigateByUrl("pregunta");
   }
+  tocv(){
+    this.router.navigateByUrl("curriculum-vitae")
+  }
+  tocuestion(){
+    this.router.navigateByUrl("cuestion")
+  }
     
   ngOnInit() {
   }

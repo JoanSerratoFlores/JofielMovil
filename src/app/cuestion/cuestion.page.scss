@@ -1,0 +1,128 @@
+#header {
+    --background: #073c66;
+    .btnheader {
+        position: absolute;
+        right: 15px;
+        top: 7px;
+        ion-img {
+            width: 30px;
+        }
+    }
+}
+
+#follow {
+    --background: #ffffff;
+    --border-radius: 25px;
+    --color: #073c66;
+    border: 1px orange solid;
+    border-radius: 25px;
+    width: fit-content;
+    height: 25px;
+    font-size: small;
+}
+
+#nombreusuario {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+#carrerausuario {
+    font-size: 10px;
+    margin: 0px;
+}
+
+.btnreaction {
+    border-bottom: grey 1px solid;
+    width: 100%;
+}
+
+#comments {
+    font-size: 7px;
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+
+#view {
+    font-size: 7px;
+    margin-top: 3px;
+}
+
+#share {
+    font-size: 7px;
+    margin-top: 3px;
+}
+
+#sigue {
+    font-size: 7px;
+    margin-top: 3px;
+}
+
+#notification {
+    position: absolute;
+    right: 20%;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+#mensaje {
+    position: absolute;
+    right: 40%;
+    border-radius: 50px;
+    height: fit-content;
+}
+
+#Yo {
+    border-radius: 50px;
+    height: fit-content;
+    right: 8px;
+    bottom: -7px;
+    position: absolute;
+}
+
+.cajareaccion {
+    ion-icon {
+        margin-left: 10px;
+    }
+    p {
+        font-size: 10px;
+        margin-top: 3px;
+    }
+    ion-col {
+        padding: 10px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .reaction {
+        margin: -10px 0px 0px 0px;
+    }
+}
+
+@media (max-width:720px) {
+    .reaction {
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media (max-width:320px) {
+    #header {
+        .btnheader {
+            ion-img {
+                width: 25px;
+                margin-inline-start: 10px;
+                position: relative;
+                left: 10px;
+            }
+        }
+    }
+    #mensaje {
+        right: 35%;
+    }
+    #notification {
+        right: 15%;
+    }
+    #Yo {
+        right: -2px;
+    }
+}

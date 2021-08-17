@@ -4,12 +4,18 @@
             <ion-col size="3">
                 <ion-img style="width: 75px;" src="assets/iconos/logo.png"></ion-img>
             </ion-col>
-            <ion-col size="1.5" style="margin: 10px 0px 0px 5px;">
-                <ion-img style=" width: 30px;" src="assets/iconos/inicio.png"></ion-img>
-            </ion-col>
-            <ion-col size="1.5" style="margin: 10px 0px 0px 45%;">
-                <ion-img style=" width: 30px;" src="assets/iconos2/avatar.png"></ion-img>
-            </ion-col>
+            <ion-row class="btnheader">
+                <ion-img (click)="tocv()" src="assets/iconos/inicio.png"></ion-img>
+                <ion-img (click)="tocuestion()" class="ion-margin-start" src="assets/iconos/cuestionarios.png"></ion-img>
+                <ion-img class="ion-margin-start" src="assets/iconos/suscribirse.png"></ion-img>
+                <ion-img class="ion-margin-start" src="assets/iconos/audio.png"></ion-img>
+                <ion-img class="ion-margin-start" src="assets/iconos/mensaje.png"></ion-img>
+                <ion-badge color="whiteblue" id="mensaje">6</ion-badge>
+                <ion-img class="ion-margin-start" src="assets/iconos/noti.png"></ion-img>
+                <ion-badge color="whiteblue" id="notification">7</ion-badge>
+                <ion-img class="ion-margin-start" style="width: 40px;" src="assets/iconos2/avatar.png"></ion-img>
+                <ion-badge color="whiteblue" id="Yo">Yo</ion-badge>
+            </ion-row>
         </ion-row>
     </ion-toolbar>
 </ion-header>
