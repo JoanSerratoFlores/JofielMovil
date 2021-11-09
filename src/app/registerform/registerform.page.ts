@@ -11,7 +11,7 @@ export class RegisterformPage implements OnInit {
   slideOpts:any
   constructor(private router:Router) { }
 
-  ngOnInit() {
+  ngOnInit() { 
   }
   toHome()
   {

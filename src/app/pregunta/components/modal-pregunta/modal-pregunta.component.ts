@@ -2,6 +2,7 @@ import { PopoverComponentTema } from './../modal-pregunta/popover/popover.compon
 import { ModalController } from '@ionic/angular';
 import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal-pregunta',
@@ -10,7 +11,7 @@ import { PopoverController } from '@ionic/angular';
 })
 export class ModalPreguntaComponent implements OnInit {
 
-  constructor(public modalctrl:ModalController,public popoverComponent:PopoverController) { }
+  constructor(public modalctrl:ModalController,public popoverComponent:PopoverController,public router:Router) { }
 
   ngOnInit() {}
   dismiss()
@@ -29,4 +30,9 @@ export class ModalPreguntaComponent implements OnInit {
     const { role } = await popover.onDidDismiss();
     console.log('onDidDismiss resolved with role', role);
   }
+  tocv(){
+    this.modalctrl.dismiss()
+    this.router.navigateByUrl("curriculum-vitae")
+  }
+  
 }

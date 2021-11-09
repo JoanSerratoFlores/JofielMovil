@@ -2,13 +2,13 @@
     <ion-toolbar>
         <ion-row>
             <ion-buttons size="3">
-                <ion-img style="width: 75px;" [src]="logoBlanco"></ion-img>
+                <ion-img (click)="gohome()" style="width: 75px;" [src]="logoBlanco"></ion-img>
             </ion-buttons>
             <ion-col style="margin:5px" size="1">
                 <ion-img style="width:25px;" src="../../../assets/iconos/inicio.png"></ion-img>
             </ion-col>
             <ion-col style="margin:5px" size="1">
-                <ion-img style="width:25px;" src="../../../assets/iconos/cuestionarios.png"></ion-img>
+                <ion-img (click)="gocuestion()" style="width:25px;" src="../../../assets/iconos/cuestionarios.png"></ion-img>
             </ion-col>
             <ion-col style="margin:5px" size="1">
                 <ion-img style="width:25px;" src="../../assets/iconos/suscribirse.png"></ion-img>

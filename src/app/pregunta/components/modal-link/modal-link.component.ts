@@ -1,6 +1,7 @@
 import { PopoverComponent } from './popover/popover.component';
 import { Component, OnInit } from '@angular/core';
 import { ModalController, PopoverController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-modal-link',
@@ -8,7 +9,9 @@ import { ModalController, PopoverController } from '@ionic/angular';
   styleUrls: ['./modal-link.component.scss'],
 })
 export class ModalLinkComponent implements OnInit {
-  constructor(public modalctrl:ModalController,public popoverController:PopoverController) { }
+  constructor(public modalctrl:ModalController,
+              public popoverController:PopoverController,
+              public router:Router) { }
 
   ngOnInit() {}
   dismiss()
@@ -28,5 +31,9 @@ export class ModalLinkComponent implements OnInit {
   }
   ionViewDidEnter(){
    this.presentPopover()
+  }
+  tocv(){
+    this.modalctrl.dismiss()
+    this.router.navigateByUrl("curriculum-vitae")
   }
 }

@@ -26,7 +26,7 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     NoopAnimationsModule,
     ComponentsModule,
   ],
-  providers: 
+  providers:
   [
     { 
       provide: RouteReuseStrategy, 
